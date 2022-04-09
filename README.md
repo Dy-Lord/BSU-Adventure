@@ -28,3 +28,6 @@ You can decrypt the broken encoding, for example here:
 >http://foxtools.ru/Text
 >
 (Choose automatic decoding)
+
+## Something is wrong?
+[My Telegram](https://t.me/Dy_Lord)
