@@ -1,0 +1,3 @@
+﻿  AsmStrings.cpp
+C:\Users\User01\Desktop\Labs\LabsTwo\AssemblerStrings\AsmStrings.cpp(32): warning C4405:  str: идентификатор является зарезервированным словом
+  AssemblerStrings.vcxproj -> C:\Users\User01\Desktop\Labs\LabsTwo\AssemblerStrings\Debug\AssemblerStrings.exe

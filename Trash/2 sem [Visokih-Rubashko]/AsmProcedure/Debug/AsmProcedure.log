@@ -1,0 +1,4 @@
+﻿  Assembling Proc.asm...
+  AsmProc.cpp
+C:\Users\User01\Desktop\Labs\LabsTwo\AsmProcedure\AsmProc.cpp(14,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  AsmProcedure.vcxproj -> C:\Users\User01\Desktop\Labs\LabsTwo\AsmProcedure\Debug\AsmProcedure.exe

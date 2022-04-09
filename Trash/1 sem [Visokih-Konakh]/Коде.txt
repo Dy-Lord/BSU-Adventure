@@ -1,0 +1,94 @@
+Лабораторная 2
+
+Задание 1
+
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, ".1251");
+	int R;
+	double x, y;
+	cout << "Введите значение аргумента" << endl;
+	cin >> x;
+	if((x < -7)||(x>3))
+	{
+		cout << "Значение функции не определено! " << endl;
+		system("pause");
+		return 0;
+	}
+	if (x == -6)
+	{
+		y = 2;
+		cout << "Значение функции = " << y << endl;
+		y = (x + 2) / 4;
+		cout << "и " << y << endl;
+	}
+	else
+	if (x < -6)
+	{
+		y = 2;
+		cout << "Значение функции = " << y << endl;
+	}
+	else
+	if (x <= -2)
+	{
+		y = (x + 2) / 4;
+		cout << "Значение функции = " << y << endl;
+	}
+	else
+		if (x <= 0)
+		{
+			y = sqrt(4 - (x + 2) * (x + 2)) + 2;
+			cout << "Значение функции = " << y << endl;
+		}
+		else
+			if (x <= 2)
+			{
+				y = sqrt(4 - x * x);
+				cout << "Значение функции = " << y << endl;
+			}
+			else
+				if (x <= 3)
+				{
+					y = 2 - x;
+					cout << "Значение функции = " << y << endl;
+				}
+	system("pause");
+	return 0;
+
+}
+
+
+
+Задание 2
+
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, ".1251");
+	double x, y, R;
+	cout << "Введите радиус окружности и координаты точки " << endl;
+	cin >> R >> x >> y;
+	if (((x > 0) && (y > 0)) || ((x < 0) && (y < 0)))
+		cout << "Точка не попала в область определения! " << endl;
+	else
+		if ((x <= abs(R)) && (y <= abs(R)))
+		{
+			if ((((x + R) * (x + R) + (y - R) * (y - R)) >= R * R) && (((x - R) * (x - R) + (y + R) * (y + R)) >= R * R))
+				cout << "Точка попала в область определения!" << endl;
+			else
+				cout << "Точка не попала в область определения! " << endl;
+		}
+		else
+			cout << "Точка не попала в область определения! " << endl;
+	system("pause");
+			return 0;
+}

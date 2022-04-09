@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LI+QDH52LKX3XCu1jh0qeiqPfqw3h6IQ4GHcbjWtKRZeJEhTxYqXfiYrLH0/QJjRe0WAFLQ5qZJcoNdaf+HEsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User01\\Desktop\\Labs\\Algorithms\\byteUnit\\byteUnit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User01\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

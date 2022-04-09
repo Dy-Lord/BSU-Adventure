@@ -1,0 +1,156 @@
+package Applet;
+
+import java.applet.*;
+import java.awt.*;
+
+public class ArrowApplet extends Applet{
+	private static final long serialVersionUID = 1L;
+	
+	static final int CX = 400, CY = 400;
+	public Canvas arrow;
+
+    public Color getHtmlColor( String strRGB, Color def ) {
+        if ( strRGB != null && strRGB.charAt(0)== '#' ) {
+            try {
+                return new Color( Integer.parseInt( strRGB.substring( 1 ), 16 ) );
+            } catch ( NumberFormatException e ) {
+                return def;
+            }
+        }
+        return def;
+    }
+    public int GetInteger( String input, int def) {
+        if ( input != null) {
+            try {
+                return Integer.parseInt( input );
+            } catch ( NumberFormatException e ) {
+                return def;
+            }
+        }
+        return def;
+    }
+
+    public void init() {
+        setSize( CX, CY );
+        setLayout( null );
+        
+        Color bc = getHtmlColor(getParameter( "AppBkColor" ), new Color( 90, 90, 160 ));
+        setBackground( bc );
+        Color clr = getHtmlColor(getParameter( "DrawColor" ), new Color( 64, 64, 64 ));
+        int x = GetInteger(getParameter( "x" ), CX/2);
+        int y = GetInteger(getParameter( "y" ), CY/2);
+        int rad = GetInteger(getParameter( "Radius" ), 50);
+        
+        arrow = new DrawingArrow(clr, bc, rad);
+        arrow.setLocation(x - rad , y - rad);
+        add(arrow);
+    }
+    public void start() {
+    	startThread();
+    }
+    public void stop() {
+    	stopThread();
+    }
+    public void destroy() {
+    	stopThread();
+    }
+    private AppletThread t = null;
+    private void createThread() {
+        if ( t == null ) {
+            t = new AppletThread( this );
+        }
+    }
+    private void startThread() {
+    	createThread();
+        t.start();
+    }
+    private void stopThread() {
+        if ( t != null ) {
+            t.interrupt();
+            t = null;
+        }
+    }
+}
+
+class AppletThread extends Thread {
+    ArrowApplet a = null;
+    volatile int ni = 0;
+
+    public AppletThread( ArrowApplet a ) {
+    	super();
+    	this.a = a;
+    }
+
+    public void run() {
+    	while ( true ) {
+            try {
+                Thread.sleep( 90 );
+                doRotate();
+            } catch ( InterruptedException e ) {
+                break;
+            }
+        }
+    }
+
+    public synchronized void doRotate() {
+     ((DrawingArrow) a.arrow).rotate(10);
+     a.arrow.repaint();
+    }
+}
+
+class DrawingArrow extends Canvas {
+
+	private static final long serialVersionUID = 1L;
+	
+	Color clr;
+    Dimension dim;
+    int angle = 0;
+
+    public DrawingArrow( Color fc, Color bc, int radius) {
+        super();
+        clr = fc;
+        setBackground( bc );
+        dim = new Dimension(radius*2, radius*2);
+        setMaximumSize( dim );
+        setBounds( 0, 0, dim.width, dim.height);
+    }
+
+    public void paint(Graphics g) {
+    	prepareDraw( g );
+    	draw( g );
+    }
+
+    void prepareDraw( Graphics g ) {
+    	g.setColor( clr );
+    }
+
+    void draw( Graphics g ) {
+    	int size = dim.height/2;
+    	int coord = (int)(Math.sqrt(2)/2*size);  	
+    	Graphics2D g2D = (Graphics2D) g; 
+    	g2D.setStroke(new BasicStroke(size/20f));
+    	
+    	g2D.rotate(Math.toRadians(angle),size,size);
+    	
+        g2D.drawLine( size, size, coord + size, size - coord);
+        g2D.drawLine(size, size, (int)(coord/3) + size, size - (int)(coord/2));
+        g2D.drawLine(size, size, (int)(coord/2) + size, size - (int)(coord/3));
+       
+    }
+    
+    public void rotate(int delta){
+    	if(angle > 360)
+    		angle += 10 - 360;
+    	else
+    		angle+=delta;
+    }
+
+    public Dimension getMinimumSize() {
+    	return dim;
+    }
+
+    public Dimension getPreferredSize() {
+    	return dim;
+    }
+}
+

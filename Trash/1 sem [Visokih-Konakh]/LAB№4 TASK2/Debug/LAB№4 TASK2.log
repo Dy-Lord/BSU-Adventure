@@ -1,0 +1,5 @@
+﻿  TASK2.cpp
+C:\Users\User01\Desktop\LAB№4 TASK2\TASK2.cpp(65,14): warning C4244:  инициализация: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User01\Desktop\LAB№4 TASK2\TASK2.cpp(88,14): warning C4244:  инициализация: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User01\Desktop\LAB№4 TASK2\TASK2.cpp(55,17): warning C4101:  t: неиспользованная локальная переменная
+  LAB№4 TASK2.vcxproj -> C:\Users\User01\Desktop\LAB№4 TASK2\Debug\LAB№4 TASK2.exe

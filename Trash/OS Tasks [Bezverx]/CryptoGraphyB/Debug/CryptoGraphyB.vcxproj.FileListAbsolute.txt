@@ -1,0 +1,2 @@
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\Debug\CryptoGraphyB.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\Debug\CryptoGraphyB.pdb

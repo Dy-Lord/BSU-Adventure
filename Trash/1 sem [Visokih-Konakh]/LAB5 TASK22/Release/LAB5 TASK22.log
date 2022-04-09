@@ -1,0 +1,7 @@
+﻿  LAB5 TASK22.cpp
+C:\Users\User01\Desktop\LAB5 TASK22\LAB5 TASK22.cpp(36,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 14 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  LAB5 TASK22.vcxproj -> C:\Users\User01\Desktop\LAB5 TASK22\Release\LAB5 TASK22.exe

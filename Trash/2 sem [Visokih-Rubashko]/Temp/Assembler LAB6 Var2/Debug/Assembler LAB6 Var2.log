@@ -1,0 +1,4 @@
+﻿  Assembling Assembler LAB6 Var2ASM.asm...
+  Assembler LAB6 Var2.cpp
+C:\Users\User01\Desktop\Berdiev\Assembler LAB6 Var2\Assembler LAB6 Var2.cpp(13,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Assembler LAB6 Var2.vcxproj -> C:\Users\User01\Desktop\Berdiev\Assembler LAB6 Var2\Debug\Assembler LAB6 Var2.exe

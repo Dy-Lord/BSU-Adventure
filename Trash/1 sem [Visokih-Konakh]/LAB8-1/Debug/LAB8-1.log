@@ -1,0 +1,3 @@
+﻿  LAB8-1.cpp
+C:\Users\User01\Desktop\LAB8-1\LAB8-1.cpp(34): warning C4715:  _strstr: значение возвращается не при всех путях выполнения
+  LAB8-1.vcxproj -> C:\Users\User01\Desktop\LAB8-1\Debug\LAB8-1.exe

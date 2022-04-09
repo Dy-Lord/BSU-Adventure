@@ -1,0 +1,58 @@
+package zad_3;
+
+import java.applet.Applet;
+import java.awt.BasicStroke;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+public class line extends Applet{
+	
+	int x1,x2,y1,y2;
+	int x,y;
+	String s;
+	
+	public void init(){
+		
+		setSize(300,300);
+		
+		try{
+			
+		x1=Integer.parseInt(getParameter("x1_line"));
+		x2=Integer.parseInt(getParameter("x2_line"));
+		y1=Integer.parseInt(getParameter("y1_line"));
+		y2=Integer.parseInt(getParameter("y2_line"));
+		}
+		
+		catch(Exception e){
+			System.err.println("Input values must be in the range");
+			destroy();
+			
+		}
+	}
+	
+	public void paint(Graphics g){
+		
+		Dimension d = this.getSize();
+		
+		 ((Graphics2D) g).setStroke(new BasicStroke(2.0f));
+		
+		g.drawLine(x1,y1,x2,y2);
+		
+		x= 1 + (int)(Math.random() * ((d.width - 1) + 1));
+		y= 1 + (int)(Math.random() * ((d.height - 1) + 1));
+		
+		g.drawLine(x,y,x+1,y+1);
+		
+		int dis=(x - x1) * (y2 - y1) - (y - y1) * (x2 - x1);
+		if(dis==0)
+			s="лежит на прямой";
+		if(dis<0)
+			s="лежит слева от прямой";
+		if(dis>0)
+			s="лежит справа от прямой";
+		g.drawString(s, 0, 280);
+		
+	}
+
+}

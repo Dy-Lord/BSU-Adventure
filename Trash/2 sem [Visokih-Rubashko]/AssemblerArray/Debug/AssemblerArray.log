@@ -1,0 +1,4 @@
+﻿  AsmArray.cpp
+C:\Users\User01\Desktop\Labs\LabsTwo\AssemblerArray\AsmArray.cpp(87,20): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\LabsTwo\AssemblerArray\AsmArray.cpp(93,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  AssemblerArray.vcxproj -> C:\Users\User01\Desktop\Labs\LabsTwo\AssemblerArray\Debug\AssemblerArray.exe

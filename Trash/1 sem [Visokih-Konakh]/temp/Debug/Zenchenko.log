@@ -1,0 +1,4 @@
+﻿  Zenchenko.cpp
+C:\Users\User01\Desktop\Zenchenko\Zenchenko.cpp(62,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User01\Desktop\Zenchenko\Zenchenko.cpp(44,29): warning C4101:  z: неиспользованная локальная переменная
+  Zenchenko.vcxproj -> C:\Users\User01\Desktop\Zenchenko\Debug\Zenchenko.exe

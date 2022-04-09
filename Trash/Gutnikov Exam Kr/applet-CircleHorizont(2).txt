@@ -1,0 +1,90 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
+
+/**
+ * The Class Main.
+ * 
+ * Created on: 30.04.2012
+ * 
+ * @author: M128K145
+ */
+public class Main extends Applet implements Runnable {
+	Thread tr;
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			this.repaint();
+		}
+	}
+	private int size;
+	private int maxresize;
+	
+	
+	public void init() {
+		setBackground(Color.LIGHT_GRAY);
+		tr = new Thread(this);
+		x = 100;
+		y = 50;
+		size = 50;
+		maxresize = 20;
+	}
+
+	public void start() {
+		if (tr.getState() == Thread.State.NEW)
+			tr.start();
+		else
+			tr.resume();
+	}
+
+	public void stop() {
+		try {
+			tr.suspend();
+		} catch (Exception e) {
+			System.out.println("gyufiy");
+		}
+	}
+	int x, y;
+	int dx = -1;
+	int resize = 0;
+	public void paint(Graphics g) {
+		int width = getSize().width;
+		int height = getSize().height;
+		g.setColor(Color.BLACK);
+		g.fillOval(x, y-resize / 2, size - resize, size + resize);
+		if (x == 0)
+		{
+			if (dx < 0)
+				resize++;
+			if (resize == maxresize)
+				dx*=-1;
+			if (dx > 0)
+				resize--;
+			if (resize == 0)
+				x+=dx;
+		}else if (x >= width - size)
+		{
+			if (dx > 0)
+			{
+				resize++;
+				x+=dx;
+			}
+			if (resize == maxresize)
+				dx*=-1;
+			if (dx < 0)
+			{
+				resize--;
+				x-=1;
+			}
+			if (resize == 0)
+				x+=dx;
+		} else
+			x += dx;
+	}
+
+}

@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\MHA1\bin\Debug\MHA1.exe.config
+C:\Users\User01\Desktop\MHA1\bin\Debug\MHA1.exe
+C:\Users\User01\Desktop\MHA1\bin\Debug\MHA1.pdb
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.Form1.resources
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.Properties.Resources.resources
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.exe
+C:\Users\User01\Desktop\MHA1\obj\Debug\MHA1.pdb

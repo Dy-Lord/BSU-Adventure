@@ -1,0 +1,8 @@
+﻿  MultiThread.cpp
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(223,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(243,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(253,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(257,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(259,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\MultiThread.cpp(330,21): warning C4018: <: несоответствие типов со знаком и без знака
+  CryptoGraphyB.vcxproj -> C:\Users\User01\Desktop\Labs\OS Tasks\CryptoGraphyB\Debug\CryptoGraphyB.exe

@@ -1,0 +1,3 @@
+﻿  Assembler LAB2 Var14.cpp
+C:\Users\User01\Desktop\Berdiev\Assembler LAB4 Var14\Assembler LAB2 Var14.cpp(57,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Assembler LAB4 Var14.vcxproj -> C:\Users\User01\Desktop\Berdiev\Assembler LAB4 Var14\Debug\Assembler LAB4 Var14.exe

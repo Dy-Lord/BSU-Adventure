@@ -1,0 +1,154 @@
+package lab3;
+import java.util.*;
+public class character_string {
+	static int number(String s,int index) {// 12345
+	int N=0;
+		for(int i=index,j=0;i>=0;i--,j++) {
+			if(Character.isDigit(s.charAt(i))) {
+				N=N+Character.getNumericValue(s.charAt(i))*(int)Math.pow(10,j);
+			}
+			else {
+				break;
+			}
+		}
+		return N;
+	}
+	static int numberR(String s,int index) {// 12345
+		int N=0;
+			for(int i=index,j=0;i<s.length();i++,j++) {
+				if(Character.isDigit(s.charAt(i))) {
+					N=N*10+Character.getNumericValue(s.charAt(i));
+				}
+				else {
+					break;
+				}
+			}
+			return N;
+		}
+
+	   
+	    public static void main( String[] args ) {
+	        Scanner in = new Scanner( System.in );
+	        /*
+	        System.out.println("Каждая входная строка представляет собой арифметическое\r\n" + 
+	        		"выражение, состоящее из переменной X, целых констант, +, -,\r\n" + 
+	        		"*, /. Для каждой входной строки: вычислить и напечатать\r\n" + 
+	        		"значение выражения при заданном X. Х ввести через аргументы\r\n" + 
+	        		"программы.\r\n" + 
+	        		"");
+	        */
+	        System.out.println("\r\n введите строку");
+	        String s=in.nextLine();
+	      
+	        System.out.println("введите X");
+	        int X=in.nextInt();
+	        s.trim(); 
+	        if( (!Character.isDigit(s.charAt(0))) && s.charAt(0)!='X' ) {
+	        	System.err.println("введена неправильная строка");
+	        	System.exit(0);
+	        	}
+	        	if( (!Character.isDigit(s.charAt(s.length()-1))) && s.charAt(s.length()-1)!='X' ) {
+		        	System.err.println("введена неправильная строка");
+		        	System.exit(0);
+		        }
+	        	for(int i=0;i<s.length();i++) {
+	        		if(s.charAt(i)=='X') {
+	        			s=s.replace("X",""+X);
+	        		}
+	        	}
+	        System.out.println(s);
+	       //System.out.println(number(s,5));
+	        int index=0;
+	       while(index<s.length())
+	       {
+	        	
+	        	if(s.charAt(index)=='*') {
+	        		if(Character.isDigit(s.charAt(index-1)) && Character.isDigit(s.charAt(index+1))) {
+	        			String out=""+number(s,index-1)*numberR(s,index+1);
+	        			String pref=""+number(s,index-1);
+	        			String suf=""+numberR(s,index+1);
+	        			int number1=pref.length();
+	        			
+	        			int number2=suf.length();
+	        			s=s.replace(s.substring(index-number1,index+number2+1), out);
+	        			System.out.println(s);
+	        			index=0;
+	        		}
+	        	}
+	        	else {
+	        		index++;
+	        	}
+	        }
+	       index=0;
+	       while(index<s.length())
+	       {
+	        	
+	        	if(s.charAt(index)=='/') {
+	        		if(Character.isDigit(s.charAt(index-1)) && Character.isDigit(s.charAt(index+1))) {
+	        			String out=""+number(s,index-1)/numberR(s,index+1);
+	        			String pref=""+number(s,index-1);
+	        			String suf=""+numberR(s,index+1);
+	        			int number1=pref.length();
+	        			
+	        			int number2=suf.length();
+	        			s=s.replace(s.substring(index-number1,index+number2+1), out);
+	        			System.out.println(s);
+	        			index=0;
+	        		}
+	        	}
+	        	else {
+	        		index++;
+	        	}
+	        }
+	        	 index=0;
+	  	       while(index<s.length())
+	  	       {
+	  	        	
+	  	        	if(s.charAt(index)=='+') {
+	  	        		if(Character.isDigit(s.charAt(index-1)) && Character.isDigit(s.charAt(index+1))) {
+	  	        			String out=""+(number(s,index-1)+numberR(s,index+1));
+		        			String pref=""+number(s,index-1);
+		        			String suf=""+numberR(s,index+1);
+		        			int number1=pref.length();
+		        			
+		        			int number2=suf.length();
+		        			s=s.replace(s.substring(index-number1,index+number2+1), out);
+	  	        			System.out.println(s);
+	  	        			index=0;
+	  	        		}
+	  	        	}
+	  	        	else {
+	  	        		index++;
+	  	        	
+	  	        	}
+	  	       }
+	  	        	 index=0;
+	  		       while(index<s.length())
+	  		       	{
+	  		        	
+	  		        	if(s.charAt(index)=='-') {
+	  		        		if(Character.isDigit(s.charAt(index-1)) && Character.isDigit(s.charAt(index+1))) {
+	  		        			String out=""+(number(s,index-1)-numberR(s,index+1));
+	  		        			String pref=""+number(s,index-1);
+	  		        			String suf=""+numberR(s,index+1);
+	  		        			int number1=pref.length();
+	  		        			
+	  		        			int number2=suf.length();
+	  		        			s=s.replace(s.substring(index-number1,index+number2+1), out);
+	  		        			System.out.println(s);
+	  		        			index=0;
+	  		        		}
+	  		        	}
+	  		        	else {
+	  		        		index++;
+	  		        	
+	  		        		}
+	  		       	}
+	  	       		
+	       		
+	    	}
+	}
+	    
+
+
+

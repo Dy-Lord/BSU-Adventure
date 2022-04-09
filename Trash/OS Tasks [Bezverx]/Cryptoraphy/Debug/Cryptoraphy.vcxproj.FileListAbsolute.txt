@@ -1,0 +1,2 @@
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\Debug\Cryptoraphy.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\Debug\Cryptoraphy.pdb

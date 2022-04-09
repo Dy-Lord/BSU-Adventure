@@ -1,0 +1,8 @@
+This is a classic problem, faced by many while in Competitive Coding Competitions ,
+in Coding Rounds of Technical Companies for placements, etc. We’re supposed to take the input 
+in a continuous manner and further “break” the input into a suitable form to be manipulated, mostly as strings.
+
+After facing the problem quite a number of times on CodeChef, Hackerrank and my College exams, 
+I found a perfect solution to the same, which will be explained in great depth by me here.
+
+Note: Do not get scared, looking at terms such as Vectors, stringstream, etc. All of them will be explained in understandable language, after the code.

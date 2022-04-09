@@ -1,0 +1,8 @@
+﻿  LAB5 TASK2.cpp
+C:\Users\User01\Desktop\LAB5 TASK2\LAB5 TASK2.cpp(36,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода
+  1 of 14 functions ( 7.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  LAB5 TASK2.vcxproj -> C:\Users\User01\Desktop\LAB5 TASK2\Release\LAB5 TASK2.exe

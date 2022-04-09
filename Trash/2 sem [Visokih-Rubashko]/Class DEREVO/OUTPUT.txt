@@ -1,0 +1,30 @@
+17	Inserted
+23	Inserted
+11	Not deleted!
+11	Inserted
+20	Inserted
+13	Inserted
+25	Inserted
+101	Inserted
+17	Not inserted
+80	Not deleted!
+77	Inserted
+164	Inserted
+12	Inserted
+10	Inserted
+20	Not inserted
+13	found after 3 comprasion(s)
+15	Not deleted!
+64	Not found after 5 comprasion(s)
+17	Deleted!
+List of elements
+10
+11
+12
+13
+20
+23
+25
+77
+101
+164

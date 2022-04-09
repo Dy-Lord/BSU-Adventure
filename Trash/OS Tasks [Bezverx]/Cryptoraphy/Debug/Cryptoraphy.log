@@ -1,0 +1,6 @@
+﻿  DoubleThread.cpp
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\DoubleThread.cpp(56,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\DoubleThread.cpp(76,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\DoubleThread.cpp(77,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\DoubleThread.cpp(91,25): warning C4101: el: неиспользованная локальная переменная
+  Cryptoraphy.vcxproj -> C:\Users\User01\Desktop\Labs\OS Tasks\Cryptoraphy\Debug\Cryptoraphy.exe

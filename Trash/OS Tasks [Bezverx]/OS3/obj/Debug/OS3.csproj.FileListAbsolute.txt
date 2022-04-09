@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\bin\Debug\OS3.exe.config
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\bin\Debug\OS3.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\bin\Debug\OS3.pdb
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.Form1.resources
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.Properties.Resources.resources
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\OS3\obj\Debug\OS3.pdb

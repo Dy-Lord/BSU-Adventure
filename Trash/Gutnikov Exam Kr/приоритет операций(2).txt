@@ -1,0 +1,43 @@
+package company;
+import java.io.*;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] operations = {"*", "/", "%", "+", "-", ">>", "<<", ">>>", "&", "|"};
+        int[] numOperations = new int[10];
+        boolean isCorrect=true;
+        System.out.println("Enter your text:");
+        String str = br.readLine();
+        StringTokenizer stringOperations = new StringTokenizer(str, " 0123456789");
+        StringTokenizer stringNumbers = new StringTokenizer(str, "*/%+-><&|");
+        while (stringOperations.hasMoreTokens()) {
+            String curOperation=stringOperations.nextToken();
+            int i;
+            for (i=0; i < 10; i++)
+                if (operations[i].equals(curOperation)) {
+                    numOperations[i]++;
+                    break;
+                }
+            if(i==10)
+                isCorrect=false;
+        }
+        String result = "";
+        if(isCorrect) {
+            while (stringNumbers.hasMoreTokens()) {
+                result += stringNumbers.nextToken();
+                for (int i = 0; i < 10; i++)
+                    if (numOperations[i] > 0) {
+                        result += operations[i];
+                        numOperations[i]--;
+                        break;
+                    }
+            }
+        }
+        else
+            result="Incorrect input string.";
+        System.out.println(result);
+
+    }
+}

@@ -1,0 +1,8 @@
+﻿  Kont7.cpp
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,14): warning C4305:  аргумент: усечение из "int" в "_Elem"
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,14): warning C4305:         with
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,14): warning C4305:         [
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,14): warning C4305:             _Elem=char
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,14): warning C4305:         ]
+C:\Users\User01\Desktop\LabsTwo\Kont7\Kont7.cpp(57,10): warning C4309:  аргумент: усечение константного значения
+  Kont7.vcxproj -> C:\Users\User01\Desktop\LabsTwo\Kont7\Debug\Kont7.exe

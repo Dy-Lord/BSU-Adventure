@@ -1,0 +1,9 @@
+﻿  WinApiFoo.cpp
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(27,34): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(28,32): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(87,22): warning C4244:  =: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(96,21): warning C4244:  =: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(211,14): warning C4244:  =: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(216,15): warning C4244:  =: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User01\Desktop\WinApiFoo\WinApiFoo.cpp(382): warning C4715:  DataError: значение возвращается не при всех путях выполнения
+  WinApiFoo.vcxproj -> C:\Users\User01\Desktop\WinApiFoo\Debug\WinApiFoo.exe

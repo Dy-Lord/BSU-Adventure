@@ -1,0 +1,4 @@
+﻿  BinarUP.cpp
+C:\Users\User01\Desktop\BinarUP\BinarUP.cpp(310,10): warning C4244:  инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\BinarUP\BinarUP.cpp(322,15): warning C4244:  /=: преобразование "double" в "int", возможна потеря данных
+  BinarUP.vcxproj -> C:\Users\User01\Desktop\BinarUP\Debug\BinarUP.exe

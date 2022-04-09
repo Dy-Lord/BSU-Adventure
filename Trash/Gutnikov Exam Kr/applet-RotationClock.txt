@@ -1,0 +1,151 @@
+import java.applet.*;
+import java.awt.*;
+
+public class AppRectangle extends Applet implements Runnable {
+    private double x1, x2, x3, x4;
+    private double y1, y2, y3, y4;
+    private int i;
+    private double l1, l2, l3, l4;
+    private double xvra, yvra;
+    private int red, green, blue;
+    private int bgRed, bgGreen, bgBlue;
+    private int time;
+    private int[] xArr, yArr;
+    private Thread thread = null;
+    private Color clr;
+
+    public void init() {
+        String param;
+        param = getParameter("x1");
+        x1 = (param == null) ? 150 : Double.parseDouble(param);
+        param = getParameter("y1");
+        y1 = (param == null) ? 200 : Double.parseDouble(param);
+        param = getParameter("x2");
+        x2 = (param == null) ? 150 : Double.parseDouble(param);
+        param = getParameter("y2");
+        y2 = (param == null) ? 240 : Double.parseDouble(param);
+        param = getParameter("x3");
+        x3 = (param == null) ? 360 : Double.parseDouble(param);
+        param = getParameter("y3");
+        y3 = (param == null) ? 240 : Double.parseDouble(param);
+        param = getParameter("x4");
+        x4 = (param == null) ? 180 : Double.parseDouble(param);
+        param = getParameter("y4");
+        y4 = (param == null) ? 170: Double.parseDouble(param);
+        param = getParameter("i");
+        i = (param == null) ? 0 : Integer.parseInt(param);
+        param = getParameter("colorR");
+        red = (param == null) ? 100 : Integer.parseInt(param);
+        param = getParameter("colorG");
+        green = (param == null) ? 100 : Integer.parseInt(param);
+        param = getParameter("colorB");
+        blue = (param == null) ? 167 : Integer.parseInt(param);
+        param = getParameter("bgcolorR");
+        bgRed = (param == null) ? 0 : Integer.parseInt(param);
+        param = getParameter("bgcolorG");
+        bgGreen = (param == null) ? 200 : Integer.parseInt(param);
+        param = getParameter("bgcolorB");
+        bgBlue = (param == null) ? 0 : Integer.parseInt(param);
+        time = 14;
+        
+        xArr = new int[]{(int)x1, (int)x2, (int)x3, (int)x4};
+        yArr = new int[]{(int)y1, (int)y2, (int)y3, (int)y4};
+        if (i<0||i>3)
+        	throw new IllegalArgumentException("incorrect argument i (i must be 0,1,2 or 3)");
+        xvra = xArr[i];
+        yvra = yArr[i];
+        
+        l1 = Point.distance(x1, y1, xvra, yvra);
+        l2 = Point.distance(x2, y2, xvra, yvra);
+        l3 = Point.distance(x3, y3, xvra, yvra);
+        l4 = Point.distance(x4, y4, xvra, yvra);
+        
+        clr = new Color(red, green, blue);
+        Color bgClr = new Color(bgRed, bgGreen, bgBlue);
+        setBackground(bgClr);
+
+        thread = new Thread(this);
+        thread.start();
+        System.out.println("x " + xvra + " | y " + yvra);
+    }
+
+    @Override
+    public void update(Graphics g) {
+        paint(g);
+    }
+
+    @Override
+    public void paint(Graphics g) {
+
+        try {
+            Graphics2D g2d = (Graphics2D)g;
+            g2d.clearRect(0, 0, getWidth(), getHeight());
+            g2d.setColor(clr);
+
+            rotate();
+
+            Polygon p = new Polygon(xArr, yArr, 4);
+            g2d.fillPolygon(p);
+            g2d.setColor(Color.RED);
+            g2d.fill3DRect((int)xvra, (int)yvra, 2, 2, true);
+        }
+        catch(Exception error) {
+            System.out.println(error.getMessage());
+        }
+    }
+
+    public void run() {
+        while (true) {
+            repaint();
+            try {
+                Thread.sleep(time);
+            } catch (InterruptedException ex) {}
+        }
+    }
+
+    public void rotate() {
+    	if (i!=0){
+        double[] xy1 = step(x1, y1, l1);
+        x1 = xy1[0];
+        y1 = xy1[1];
+    	}
+    	if (i!=1){
+        double[] xy2 = step(x2, y2, l2);
+        x2 = xy2[0];
+        y2 = xy2[1];
+    	}
+        if (i!=2){
+        double[] xy3 = step(x3, y3, l3);
+        x3 = xy3[0];
+        y3 = xy3[1];
+        }
+        if (i!=3){
+        double[] xy4 = step(x4, y4, l4);
+        x4=xy4[0];
+        y4=xy4[1];
+        }
+        xArr = new int[] {(int)x1, (int)x2, (int)x3, (int)x4};
+        yArr = new int[] {(int)y1, (int)y2, (int)y3, (int)y4};
+    }
+
+    public double[] step(double x, double y, double hyp) {
+        double sin = Math.abs(y - yvra) / hyp;
+        double angle = Math.asin(sin);
+
+        if (y > yvra) {
+            if (x < xvra) {
+                angle = Math.PI + angle;
+            } else {
+                angle = 2 * Math.PI - angle;
+            }
+        } else if (x < xvra) {
+            angle = Math.PI - angle;
+        }
+
+        angle += Math.PI/180;
+        x = xvra + (Math.cos(angle) * hyp);
+        y = yvra - (Math.sin(angle) * hyp);
+
+        return new double[] {x, y};
+    }
+}

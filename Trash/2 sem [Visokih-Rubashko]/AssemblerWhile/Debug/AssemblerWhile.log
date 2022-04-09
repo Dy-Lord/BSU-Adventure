@@ -1,0 +1,3 @@
+﻿  AsmWhile.cpp
+C:\Users\User01\Desktop\LabsTwo\AssemblerWhile\AsmWhile.cpp(24,37): warning C4244:  +=: преобразование "double" в "int", возможна потеря данных
+  AssemblerWhile.vcxproj -> C:\Users\User01\Desktop\LabsTwo\AssemblerWhile\Debug\AssemblerWhile.exe

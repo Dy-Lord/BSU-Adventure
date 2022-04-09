@@ -1,0 +1,4 @@
+﻿  SORTSHELL.cpp
+C:\Users\User01\Desktop\SORT\SORTSHELL.cpp(15,10): warning C4244:  инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\SORT\SORTSHELL.cpp(34,15): warning C4244:  /=: преобразование "double" в "int", возможна потеря данных
+  SORT.vcxproj -> C:\Users\User01\Desktop\SORT\x64\Debug\SORT.exe

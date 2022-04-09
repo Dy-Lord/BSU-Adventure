@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\bin\Debug\GifCutter.exe.config
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\bin\Debug\GifCutter.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\bin\Debug\GifCutter.pdb
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.Form1.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.Properties.Resources.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\GifCutter\obj\Debug\GifCutter.pdb

@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\bin\Release\Billiards.exe.config
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\bin\Release\Billiards.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\bin\Release\Billiards.pdb
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.Form1.resources
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.Properties.Resources.resources
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.exe
+C:\Users\User01\Desktop\Labs\OS Tasks\Billiards\obj\Release\Billiards.pdb

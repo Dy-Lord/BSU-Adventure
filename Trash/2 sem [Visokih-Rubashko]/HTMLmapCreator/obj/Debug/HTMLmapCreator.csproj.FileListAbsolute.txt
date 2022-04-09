@@ -1,0 +1,13 @@
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.Form1.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.Properties.Resources.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\bin\Debug\HTMLmapCreator.exe.config
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\bin\Debug\HTMLmapCreator.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\bin\Debug\HTMLmapCreator.pdb
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.pdb
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.AreaInfo.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.ObjectInfo.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\HTMLmapCreator\obj\Debug\HTMLmapCreator.ColorDLG.resources

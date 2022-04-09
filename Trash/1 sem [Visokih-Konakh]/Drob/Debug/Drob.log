@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\User01\Desktop\Drob\main.cpp(16,10): warning C4244:  инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\Drob\main.cpp(31,15): warning C4244:  /=: преобразование "double" в "int", возможна потеря данных
+  Drob.vcxproj -> C:\Users\User01\Desktop\Drob\Debug\Drob.exe

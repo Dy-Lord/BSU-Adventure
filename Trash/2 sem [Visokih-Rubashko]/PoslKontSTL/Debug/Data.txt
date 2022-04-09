@@ -1,0 +1,9 @@
+Vozovikov 10 10
+Zenchenko 10 10 2 3 5
+Volodzina 10 6 8 9 
+Alicoooop 3 2 2 2 2
+Stelmahhh 8 6 7 5 19 8 
+Goloddddd 13 4 5 9 3 7
+Borisovich 14 2 4 7 48
+Kragellll 6 2 4 8 3 2
+Thomassss 3 10 10 32 1

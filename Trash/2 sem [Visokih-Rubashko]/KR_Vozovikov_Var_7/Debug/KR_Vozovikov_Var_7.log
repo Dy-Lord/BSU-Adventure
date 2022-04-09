@@ -1,0 +1,5 @@
+﻿  KR_Vozovikov_Var_7.cpp
+C:\Users\User01\Desktop\KR_Vozovikov_Var_7\resource.h(20,1): warning C4005:  IDC_SIZE: изменение макроопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winuser.h(10615): message :  см. предыдущее определение "IDC_SIZE"
+C:\Users\User01\Desktop\KR_Vozovikov_Var_7\KR_Vozovikov_Var_7.cpp(209,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  KR_Vozovikov_Var_7.vcxproj -> C:\Users\User01\Desktop\KR_Vozovikov_Var_7\Debug\KR_Vozovikov_Var_7.exe

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+      <head>
+      <title> LIST1</title>
+<style type="text/css">
+   TABLE {
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+   }
+  </style>
+      </head>
+<body>
+<center>
+<p><a href="list2.htm">Ссылка на следущую страницу</a></p>
+<table>
+    <tr>
+        <td colspan="3">успеваемость за 1-ый семестр</td>
+    </tr>
+    <tr>
+        <td>предмет</td>
+        <td>зачет</td>
+        <td>экзамен</td>
+    </tr>
+    <tr>
+        <td>матанализ</td>
+        <td>зачтено</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>геометрия</td>
+        <td>зачтено</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>программирование</td>
+        <td>не зачтено</td>
+        <td>не допущен</td>
+    </tr>
+    <tr>
+        <td>история</td>
+        <td>зачтено</td>
+        <td>7</td>
+    </tr>
+</table>
+<p><a href="#top">Ссылка на изображение человечка</a></p>
+</center>
+</body>
+</html>

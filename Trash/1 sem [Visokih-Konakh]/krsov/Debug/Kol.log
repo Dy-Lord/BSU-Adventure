@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\Users\User01\Desktop\Kol\Source.cpp(92,6): warning C4101:  MAX: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(93,6): warning C4101:  MAXLEN: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(94,6): warning C4101:  MAXPOZ: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(94,14): warning C4101:  MINPOZ: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(93,14): warning C4101:  MINLEN: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(92,11): warning C4101:  MIN: неиспользованная локальная переменная
+C:\Users\User01\Desktop\Kol\Source.cpp(91,6): warning C4101:  num: неиспользованная локальная переменная
+  Kol.vcxproj -> C:\Users\User01\Desktop\Kol\Debug\Kol.exe

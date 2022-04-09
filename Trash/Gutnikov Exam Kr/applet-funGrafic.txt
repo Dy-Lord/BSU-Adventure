@@ -1,0 +1,104 @@
+
+import java.applet.*;
+import java.awt.*;
+
+public class applete extends Applet {
+
+	private static final long serialVersionUID = 1L;
+	
+	   final static String label[] = {"-3", "-2", "-1", "0", "1", "2" ,"3"};
+	   
+	   int Height = 240;
+	   int Width = 240;
+	   int step = Height/6;
+	   int indent = 40; // отступ
+	   int X_C = indent + Height/2;
+	   int Y_C = indent + Height/2;
+	   
+	   Color linecolor, graphcolor;
+	   
+	   public void paint(Graphics g)
+	     {
+		   g.setColor(linecolor);
+		   
+		   for(int i=0; i<=6; i++)
+		   {
+			  //сетка
+			   g.drawLine(indent,
+			              indent + Height - i*step, 
+			              indent + Width , 
+			              indent + Height - i*step);
+			   g.drawLine(indent + (i*step),
+		 	              indent, 
+		 	              indent + (i*step),
+		 	              indent + Height );
+			   //метки
+			   g.drawString(label[i],
+		               		indent + step*i,
+		               		Y_C + 10);
+			   g.drawString(label[i],
+		               		X_C + 1,
+		               		indent + Height - step*i +10);
+		   }
+		   g.setFont(new Font("Calibri", Font.BOLD, 18));
+		   g.drawString("y",
+	               		X_C - 5,
+	               		indent - 5);
+		   g.drawString("x",
+				   		indent + Width +5,
+				   		Y_C);
+		   //стрелочки осей
+		   g.drawLine(X_C - 10,
+	 	              indent + 10 , 
+	 	              X_C ,
+	 	              indent);
+		   g.drawLine(X_C + 10,
+	 	              indent + 10 , 
+	 	              X_C ,
+	 	              indent);
+		   g.drawLine(indent + Width - 10,
+	 	              Y_C +10 , 
+	 	              indent + Width ,
+	 	              Y_C );
+		   g.drawLine(indent + Width - 10,
+				   	  Y_C - 10, 
+				   	  indent + Width ,
+	 	              Y_C);
+		 
+		   
+		   
+		   g.drawString("y=x^2-1   -1<=-x<=2", 10, 15);
+		  // график
+		   g.setColor(graphcolor);
+		        for(double x = -1; x <= 2 ; x += 0.05)
+		          {		        	
+		        	double y = x*x-1;
+		        	int xx = X_C + (int)(step*x);
+		        	int yy = Y_C + (int)(step*y);
+		            g.drawOval(xx, yy, 1, 1); 
+		          }
+		   }
+	   public Color getHtmlColor( String strRGB, Color def ) 
+	   {
+	        if ( strRGB != null && strRGB.charAt(0)== '#' ) 
+	        {
+	            try 
+	            {
+	                return new Color( Integer.parseInt( strRGB.substring( 1 ), 16 ) );
+	            } 
+	            catch ( NumberFormatException e ) 
+	            {
+	                return def;
+	            }
+	        }
+			return def;
+	   }
+	   
+	   public void init()
+	   {
+		   setSize( Height + 70, Width + 70);
+		   setBackground(new Color(255, 248, 220));// фон
+		   linecolor = getHtmlColor(getParameter( "LineColor" ), Color.BLACK);
+		   graphcolor = getHtmlColor(getParameter( "GraphColor" ),  Color.RED);	  
+	   }
+}

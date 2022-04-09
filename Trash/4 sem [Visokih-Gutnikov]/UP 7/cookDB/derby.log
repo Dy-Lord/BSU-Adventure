@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Apr 20 10:49:50 MSK 2021:
+ Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): экземпляр a816c00e-0178-ee41-c240-00002a7efdb9
+в каталоге базы данных C:\Users\User01\Desktop\UP 7\cookDB\cookDB sun.misc.Launcher$AppClassLoader@18b4aac2 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_261-b12
+user.dir=C:\Users\User01\Desktop\UP 7
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\User01\Desktop\UP 7\cookDB
+Запущен загрузчик классов базы данных - derby.database.classpath=''

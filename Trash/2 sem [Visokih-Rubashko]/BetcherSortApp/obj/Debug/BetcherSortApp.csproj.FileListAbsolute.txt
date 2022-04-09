@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\bin\Debug\BetcherSortApp.exe.config
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\bin\Debug\BetcherSortApp.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\bin\Debug\BetcherSortApp.pdb
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.Form1.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.Properties.Resources.resources
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.exe
+C:\Users\User01\Desktop\Labs\LabsTwo\BetcherSortApp\obj\Debug\BetcherSortApp.pdb

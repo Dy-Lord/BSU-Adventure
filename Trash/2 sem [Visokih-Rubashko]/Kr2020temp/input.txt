@@ -1,0 +1,7 @@
+19F24;One;Belochlin;Timofeef;Stelmah;EveryTemp
+5rdg2;One;Biologichka;Andreev;Begovskii;MAXTEMP;EveryTemp
+F4323;MathProha;Pogodaev;Berdiev;EveryTemp
+231A4;DniMUL;EveryTemp
+65LLf;ASTORF;Vozovikov;Pogodaev;MAXTEMP;MAXTTEMP;EveryTemp
+643se;One;Andreev;Vozovikov;EveryTemp
+dg234;One;Andreev;EveryTemp

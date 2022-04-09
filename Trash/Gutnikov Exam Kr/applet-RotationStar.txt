@@ -1,0 +1,141 @@
+package zad_4;
+
+
+import java.applet.Applet;
+import java.awt.*;
+
+public class Star extends Applet implements Runnable {
+
+    private volatile boolean fSuspend = false;
+
+    public synchronized void setfSuspend(boolean value){
+        fSuspend = value;
+    }
+
+    public synchronized boolean getfSuspend(){
+        return fSuspend;
+    }
+
+    public boolean isfSuspend(){
+        return getfSuspend();
+    }
+
+    public void suspend(){
+        setfSuspend(true);
+    }
+
+
+    public void resume(){
+        setfSuspend(false);
+    }
+
+    Thread thread = null;
+
+    int timeSleep = 20;
+    int counts = 5;
+    Color bgColor = Color.blue;
+    Color startColor = Color.yellow;
+    int radius = 100;
+    int smallradius = radius / 2;
+    int xPos = 77;
+    int yPos = 77;
+    int [] xArr = new int[counts * 2];
+    int [] yArr = new int[counts * 2];
+    double startAngle = 0;
+
+    int step = 5;
+    public void init(){
+
+        /*xPos = this.getWidth() / 2;
+        yPos = this.getHeight() / 2;*/
+        createStar(xArr, yArr, counts);
+        if (thread == null)
+        {
+            resume();
+            thread = new Thread(this);
+        }
+        thread.start();
+    }
+
+    public void createStar(int [] xArr, int [] yArr, int counts){
+
+        double part = 360 * 1.0 / (counts * 2);
+
+        for (int i = 0 ; i < counts * 2; i++){
+            if (i % 2 == 0){
+
+
+                xArr[i] = xPos + (int)(Math.cos(Math.toRadians(i * part + startAngle)) * radius);
+                yArr[i] = yPos + (int)(Math.sin(Math.toRadians(i * part + startAngle)) * radius);
+            }
+            else{
+                xArr[i] = xPos + (int)(Math.cos(Math.toRadians(i * part + startAngle)) * smallradius);
+                yArr[i] = yPos + (int)(Math.sin(Math.toRadians(i * part + startAngle)) * smallradius);
+            }
+        }
+
+    }
+
+    public void run() {
+        suspend();
+        while (true){
+            try {
+                Thread.sleep(timeSleep);
+                if (isfSuspend() == false)
+                    writeNext();
+            }
+            catch (Exception e){
+                System.out.print(e);
+                break;
+            }
+        }
+
+    }
+
+    public void writeNext(){
+        startAngle += step;
+        if (startAngle % 360 == 0)
+            startAngle = 0;
+
+        createStar(xArr,yArr,counts);
+
+        repaint();
+    }
+
+    public void paint(Graphics gr){
+        gr.setColor(bgColor);
+        gr.fillRect(0,0,this.getWidth(),this.getHeight());
+
+        gr.setColor(startColor);
+      /*  for (int i = 0 ; i < counts * 2; i++)
+        {
+            gr.fillOval(xArr[i], yArr[i],5,5);
+        }
+
+        gr.setColor(Color.red);
+        gr.fillOval(xPos, yPos,5,5);
+*/
+        gr.fillPolygon(xArr,yArr,counts * 2);
+
+
+    }
+
+
+    public void stop(){
+        suspend();
+    }
+
+    public void destroy(){
+        if (thread != null){
+            thread.interrupt();
+            thread = null;
+        }
+
+    }
+
+    public void start(){
+        resume();
+
+
+    }
+}

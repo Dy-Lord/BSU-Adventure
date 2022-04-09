@@ -1,0 +1,6 @@
+﻿  WinApi Circles.cpp
+C:\Users\User01\Desktop\WinApi Circles\WinApi Circles.cpp(311,46): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\WinApi Circles\WinApi Circles.cpp(312,24): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\WinApi Circles\WinApi Circles.cpp(327,46): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\WinApi Circles\WinApi Circles.cpp(328,24): warning C4244:  аргумент: преобразование "double" в "int", возможна потеря данных
+  WinApi Circles.vcxproj -> C:\Users\User01\Desktop\WinApi Circles\Debug\WinApi Circles.exe

@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\User01\Desktop\Classs\main.cpp(168,10): warning C4244:  инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User01\Desktop\Classs\main.cpp(180,15): warning C4244:  /=: преобразование "double" в "int", возможна потеря данных
+  Classs.vcxproj -> C:\Users\User01\Desktop\Classs\Debug\Classs.exe

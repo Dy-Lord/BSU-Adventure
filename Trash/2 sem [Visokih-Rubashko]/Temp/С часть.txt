@@ -1,0 +1,104 @@
+cout << "Наименьшее среди тех чисел первого массива, которые не входят во второй:" << endl << endl;
+
+	unsigned short arr1[10];
+	unsigned short arr2[10];
+	unsigned short temp[10];
+
+	for (int i = 0; i < 10; i++)
+		arr1[i] = rand() % 50;
+	for (int i = 0; i < 10; i++)
+		arr2[i] = rand() % 50;
+	cout << endl;
+	cout << "Первый массив:" << endl;
+	cout << endl;
+	for (int i = 0; i < 10; i++)
+		cout << arr1[i] << "  ";
+	cout << endl;
+	cout << "Второй массив:" << endl;
+	cout << endl;
+	for (int i = 0; i < 10; i++)
+		cout << arr2[i] << "  ";
+	cout << endl << endl;
+	cout << "Наименьшее среди тех чисел первого массива, которые не входят во второй:" << endl << endl;
+	short num;
+
+	_asm
+	{
+		mov edi, 0
+		mov ax, arr1[0]
+		_start:
+		mov esi, 0
+			cmp edi, 0
+			je _min
+			_rep:
+			mov ax, arr1[esi*2]
+		
+			mov ebx, edi
+			mov edi, 0
+			inc esi
+			_inn:
+		cmp ax, temp[edi*2]
+			je _save
+			inc edi
+			cmp edi, ebx
+			jne _inn
+
+			jmp Box
+			_save:
+			mov edi, ebx
+			jmp _rep
+			Box:
+
+			mov edi, ebx
+			mov esi, 0
+	_min:
+		mov dx, arr1[esi * 2]
+		cmp ax, arr1[esi*2]
+			jl _con
+
+			mov ebx, edi
+			mov edi, 0
+			_in:
+			cmp edi, ebx
+			je _nex
+		cmp dx, temp[edi]
+			je _sv
+			inc edi
+			cmp edi, ebx
+			jne _in
+		mov edi, ebx
+			_nex:
+			mov ax, arr1[esi * 2]
+				_con:
+
+				jmp pad
+				_sv:
+				mov edi, ebx
+					pad:
+			inc esi
+			cmp esi, 10
+			jne _min
+
+				cmp edi, 10
+				je stop
+				mov temp[edi * 2], ax
+		mov esi, 0
+				inc edi
+				
+			_whilel:
+			cmp ax, arr2[esi * 2]
+			je _start
+			inc esi
+			cmp esi, 10
+			jne _whilel
+				
+				mov num, ax
+				jmp fin
+				stop:
+			dec edi
+			mov ax, temp[edi * 2]
+			mov num, ax
+				fin:		
+	}
+
+		cout << num;

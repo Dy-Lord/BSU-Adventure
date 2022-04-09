@@ -1,0 +1,10 @@
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.Form1.resources
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.Properties.Resources.resources
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.csproj.GenerateResource.cache
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\ShrinkingMappingGraf\bin\Debug\ShrinkingMappingGraf.exe.config
+C:\Users\User01\Desktop\ShrinkingMappingGraf\bin\Debug\ShrinkingMappingGraf.exe
+C:\Users\User01\Desktop\ShrinkingMappingGraf\bin\Debug\ShrinkingMappingGraf.pdb
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.exe
+C:\Users\User01\Desktop\ShrinkingMappingGraf\obj\Debug\ShrinkingMappingGraf.pdb

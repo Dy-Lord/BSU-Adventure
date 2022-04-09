@@ -1,0 +1,2 @@
+C:\Users\User01\Desktop\Labs\Donut\Debug\Donut.exe
+C:\Users\User01\Desktop\Labs\Donut\Debug\Donut.pdb

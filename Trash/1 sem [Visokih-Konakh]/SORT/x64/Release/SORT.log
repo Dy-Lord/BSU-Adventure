@@ -1,0 +1,9 @@
+﻿  SORTTIME.cpp
+C:\Users\User01\Desktop\Labs\LabsOne\SORT\SORTTIME.cpp(37,50): warning C4267:  =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User01\Desktop\Labs\LabsOne\SORT\SORTTIME.cpp(39,38): warning C4267:  =: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  6 of 211 functions ( 2.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  SORT.vcxproj -> C:\Users\User01\Desktop\Labs\LabsOne\SORT\x64\Release\SORT.exe
