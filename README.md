@@ -1,4 +1,4 @@
-# BSU-Advanture
+# BSU-Adventure
 
 ## Welcome to the Fucking circus!
 Here is collected all my trash for 3 courses
