@@ -13,9 +13,6 @@ Here is collected all my trash for 3 courses
 - [2 course](https://drive.google.com/drive/folders/12n2nGyUDuuAvVLrEbBGHeG5Ajl3WR4sQ?usp=sharing)
 - [3 course](https://drive.google.com/drive/folders/1wG53XCKZFGAzvsV5AFlJROH9JlInzlUP?usp=sharing)
 
-### All algorithms for the iRunner 2 here:
->https://github.com/godnoTA/acm.bsu.by
-
 ## Notes
 Possible broken encoding of Russian strings in the code
 
