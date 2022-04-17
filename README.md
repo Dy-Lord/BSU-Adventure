@@ -4,9 +4,7 @@
 Here is collected all my trash for 3 courses
 
 ## Useful links
-### Google drives
-#### [INFA]
-- [Link](https://drive.google.com/drive/folders/1fHpN0onSWIi1IBraPW2ExMSHVeRX997I?usp=sharing)   
+### Google drives 
 
 #### [KB]
 - [1 course](https://drive.google.com/drive/folders/12zLH7I0jCuPHJ4icugnn8BuhVZSjVt2x?usp=sharing)
